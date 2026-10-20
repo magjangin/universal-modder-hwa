@@ -1,0 +1,23 @@
+{
+  "name": "universal-modder-hwa",
+  "description": "Mod almost any game you own with an AI agent (Antigravity / Claude Code): engine recon, reverse engineering, sprite and 3D-to-sprite pipelines, in-game testing, showcase videos, and a shared knowledge base. Unofficial fork of rehan-remade/universal-modder without fal; not the original repository.",
+  "author": {
+    "name": "magjangin",
+    "url": "https://github.com/magjangin"
+  },
+  "homepage": "https://github.com/magjangin/universal-modder-hwa",
+  "repository": "https://github.com/magjangin/universal-modder-hwa",
+  "license": "MIT",
+  "keywords": [
+    "game-modding",
+    "modding",
+    "reverse-engineering",
+    "knowledge-base",
+    "tmodloader",
+    "bepinex",
+    "ue4ss",
+    "sprites",
+    "game-assets",
+    "agent-skills"
+  ]
+}

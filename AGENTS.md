@@ -78,6 +78,12 @@ a game was modded.
   Claude Code) and the PATH hook marker is `universal-modder-hwa-path`, so it can sit next to an installed
   upstream plugin without one silently shadowing the other. The Python package is still `um`, so whichever
   `bin/` comes first on PATH wins.
+- **Per-user state lives under the `-hwa` name too:** `~/.universal-modder-hwa` (backups, tools; `UM_HOME`
+  overrides it) and `%LOCALAPPDATA%\universal-modder-hwa` (ffmpeg and other Windows tools), so it never mixes
+  with an upstream install. `um --version`, the kb `User-Agent` and the worker prefix
+  (`universal-modder-hwa:mod-game-worker`) follow the same name. Left as `universal-modder` on purpose:
+  links and credits to the upstream repo, `UM_KB_REPO`'s default (the shared KB is upstream), LICENSE, and
+  the `knowledge/` notes (upstream content).
 - **`.claude-plugin/marketplace.json`** makes this repo its own Claude Code marketplace, also named
   `universal-modder-hwa`: `claude plugin marketplace add https://github.com/magjangin/universal-modder-hwa`, then
   `claude plugin install universal-modder-hwa@universal-modder-hwa`. Without it `marketplace add` fails

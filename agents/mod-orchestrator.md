@@ -29,7 +29,7 @@ Rules for running them:
 - A worker that hands back mid-queue has stopped. Resume it with its next item.
 - Use the model the user asked for when spawning workers. You cannot change your own model; the user changes the main session's model.
 
-**In Claude Code:** start the workers with the Agent tool (`subagent_type`), resume them with SendMessage, and check with ListAgents if unsure whether one is running. Change the main session's model with `/model`. Installed with the universal-modder plugin, the workers' names carry the plugin's prefix: `universal-modder:mod-game-worker` and `universal-modder:mod-offline-worker`. The bare names work when the files were copied into `.claude/agents/` or `~/.claude/agents/`.
+**In Claude Code:** start the workers with the Agent tool (`subagent_type`), resume them with SendMessage, and check with ListAgents if unsure whether one is running. Change the main session's model with `/model`. Installed with the universal-modder-hwa plugin, the workers' names carry the plugin's prefix: `universal-modder-hwa:mod-game-worker` and `universal-modder-hwa:mod-offline-worker`. The bare names work when the files were copied into `.claude/agents/` or `~/.claude/agents/`.
 
 ## Deciding what comes next
 

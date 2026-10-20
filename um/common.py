@@ -62,7 +62,7 @@ def to_posix(path: str | Path) -> str:
 
 def data_dir() -> Path:
     """Per-user state: backups, downloaded tools. Override with UM_HOME."""
-    d = Path(os.environ.get("UM_HOME", Path.home() / ".universal-modder"))
+    d = Path(os.environ.get("UM_HOME", Path.home() / ".universal-modder-hwa"))
     d.mkdir(parents=True, exist_ok=True)
     return d
 

@@ -18,7 +18,7 @@ def main(argv=None):
         except (AttributeError, ValueError, OSError):
             pass
     ap = argparse.ArgumentParser(prog="um", description=DOC, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--version", action="version", version=f"universal-modder {__version__}")
+    ap.add_argument("--version", action="version", version=f"universal-modder-hwa {__version__}")
     sub = ap.add_subparsers(dest="group", metavar="<group>")
     for g in GROUPS:
         importlib.import_module(f"um.{g}").register(sub)

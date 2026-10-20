@@ -64,7 +64,7 @@ def cache_root() -> Path:
 def sync(quiet: bool = False) -> Path:
     """Mirror knowledge/ from GitHub into the cache (git tree API + raw files; no auth needed)."""
     api = f"https://api.github.com/repos/{REPO}/git/trees/{BRANCH}?recursive=1"
-    req = urllib.request.Request(api, headers={"User-Agent": "universal-modder", "Accept": "application/vnd.github+json"})
+    req = urllib.request.Request(api, headers={"User-Agent": "universal-modder-hwa", "Accept": "application/vnd.github+json"})
     tree = json.load(urllib.request.urlopen(req, timeout=60))
     paths = [t["path"] for t in tree.get("tree", []) if t["type"] == "blob" and t["path"].startswith("knowledge/")
              and t["path"].endswith((".md", ".json"))]
@@ -75,7 +75,7 @@ def sync(quiet: bool = False) -> Path:
         dst = tmp / p[len("knowledge/"):]
         dst.parent.mkdir(parents=True, exist_ok=True)
         url = f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/{p}"
-        with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "universal-modder"}), timeout=60) as r:
+        with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "universal-modder-hwa"}), timeout=60) as r:
             dst.write_bytes(r.read())
     shutil.rmtree(root, ignore_errors=True)
     tmp.rename(root)

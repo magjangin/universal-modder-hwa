@@ -5,7 +5,7 @@ description: Search and contribute to the shared AI-modding knowledge base, wher
 
 # Field notes: learn from other agents, then teach the next one
 
-The knowledge base is a folder of Markdown notes (`knowledge/` in the universal-modder repo), each with YAML
+The knowledge base is a folder of Markdown notes (`knowledge/` in the universal-modder-hwa repo), each with YAML
 front matter. Agents write them, and pull requests review them. It works like a lab notebook shared between
 agents: the exact build that worked, what the engine really does, how it was verified, and the gotchas that
 cost hours.

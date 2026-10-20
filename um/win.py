@@ -59,12 +59,12 @@ def powershell(script: str, timeout: float = 60) -> str:
 
 
 def local_appdata() -> Path:
-    """%LOCALAPPDATA%\\universal-modder (posix path under WSL)."""
+    """%LOCALAPPDATA%\\universal-modder-hwa (posix path under WSL)."""
     if is_windows():
         base = Path(os.environ["LOCALAPPDATA"])
     else:
         base = Path(to_posix(powershell("[Environment]::GetFolderPath('LocalApplicationData')").strip()))
-    d = base / "universal-modder"
+    d = base / "universal-modder-hwa"
     d.mkdir(parents=True, exist_ok=True)
     return d
 

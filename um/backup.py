@@ -5,7 +5,7 @@
     um backup diff terraria-saves "C:\\Users\\me\\Documents\\My Games\\Terraria"     # what changed since the last snapshot
     um backup restore terraria-saves [--to DIR] [--snapshot FILE] [--yes]
 
-Snapshots are zip files + a manifest (size + sha1 per file) in ~/.universal-modder/backups/<name>/.
+Snapshots are zip files + a manifest (size + sha1 per file) in ~/.universal-modder-hwa/backups/<name>/.
 Snapshots created in the same second get numbered suffixes so earlier backups are never overwritten.
 restore first snapshots the current state (so a restore can itself be undone), then puts every file
 back and removes files that weren't in the snapshot only with --clean.

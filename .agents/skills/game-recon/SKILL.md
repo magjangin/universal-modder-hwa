@@ -18,7 +18,7 @@ um scan --list                 # Steam, Epic and Xbox installs (Windows, WSL, Li
 um scan "<name or folder>"     # engine, version, exes (.NET?), anti-cheat, loaders, mod folders, saves, routes
 um scan "<game>" --json        # the same, machine-readable
 ```
-`um` lives at `bin/um` in the universal-modder repo (plugins and clones put it on PATH). Anywhere else:
+`um` lives at `bin/um` in the universal-modder-hwa repo (plugins and clones put it on PATH). Anywhere else:
 `uv tool install <this repo's folder>`.
 
 `um scan` reads files only. It indexes the install (bounded), sniffs PE headers, the Unity/Godot/GameMaker

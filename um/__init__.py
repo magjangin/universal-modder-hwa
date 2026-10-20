@@ -1,4 +1,4 @@
-"""universal-modder: tools any AI agent (Claude Code, Antigravity, ...) uses to mod games.
+"""universal-modder-hwa: tools any AI agent (Claude Code, Antigravity, ...) uses to mod games.
 
 Subcommands (see `um --help`):
   scan      find installed games and fingerprint one: engine, runtime, anti-cheat, mod loaders, routes

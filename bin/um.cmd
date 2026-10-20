@@ -1,5 +1,5 @@
 @echo off
-rem universal-modder CLI launcher for Windows cmd and PowerShell (bin/um is the bash one).
+rem universal-modder-hwa CLI launcher for Windows cmd and PowerShell (bin/um is the bash one).
 rem Put this bin folder on PATH, then run um as usual: um scan --list, um kb search Terraria, ...
 rem Uses uv when available (set UM_NO_UV=1 to skip it); otherwise python on PATH,
 rem which then needs: pip install pillow numpy pyyaml

@@ -27,7 +27,7 @@ from pathlib import Path
 
 from um.common import data_dir, die, need, text_utf8
 
-REPO = os.environ.get("UM_KB_REPO", "rehan-remade/universal-modder")
+REPO = os.environ.get("UM_KB_REPO", "magjangin/universal-modder-hwa")
 BRANCH = os.environ.get("UM_KB_BRANCH", "main")
 ROUTES = ["data", "asset-only", "loader-api", "managed-patch", "native-hook", "reimplementation", "decomp-recomp",
           "passthrough", "emulator", "other"]

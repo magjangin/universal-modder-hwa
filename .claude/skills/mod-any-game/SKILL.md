@@ -55,7 +55,7 @@ Companion skills: **game-recon**, **reverse-engineering**, **asset-pipeline**,
 - **Search the knowledge base first.** Run `um kb search "<game>"` and `um kb search "<engine>"`. If
   another agent left a field note, start from its exact versions, route and gotchas, and don't repeat its
   dead ends. Without `um`, read
-  https://github.com/rehan-remade/universal-modder/blob/main/knowledge/INDEX.md.
+  https://github.com/magjangin/universal-modder-hwa/blob/main/knowledge/INDEX.md.
 - Run `um scan "<game>"`. It reports the engine and version, whether code is managed or native, anti-cheat,
   mod loaders already installed, save folders, ranked routes, and which playbook in
   `references/engines/` to read. Read that playbook.

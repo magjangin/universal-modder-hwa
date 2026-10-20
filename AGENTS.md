@@ -12,7 +12,8 @@ a game was modded.
 2. **Search the knowledge base first:** `bin/um kb search "<game or engine>"`. Other agents may already have
    written down the exact versions, routes and gotchas (`knowledge/INDEX.md`).
 3. **At the end, write down what you learned:** a field note (`bin/um kb new ...`). `um kb pr` opens a PR
-   against the upstream repo (`UM_KB_REPO` overrides it); only run it when the human agrees.
+   against this fork, `magjangin/universal-modder-hwa` (`UM_KB_REPO` overrides it); only run it when the
+   human agrees.
 
 ## Tools
 - **`bin/um`** is the Python CLI, and it sets itself up with `uv`.
@@ -82,8 +83,10 @@ a game was modded.
   overrides it) and `%LOCALAPPDATA%\universal-modder-hwa` (ffmpeg and other Windows tools), so it never mixes
   with an upstream install. `um --version`, the kb `User-Agent` and the worker prefix
   (`universal-modder-hwa:mod-game-worker`) follow the same name. Left as `universal-modder` on purpose:
-  links and credits to the upstream repo, `UM_KB_REPO`'s default (the shared KB is upstream), LICENSE, and
-  the `knowledge/` notes (upstream content).
+  links and credits to the upstream repo, LICENSE, and the `knowledge/` notes (upstream content).
+- **The knowledge base is this fork:** `UM_KB_REPO` defaults to `magjangin/universal-modder-hwa`, so
+  `um kb search` outside a clone syncs from here and `um kb pr` opens PRs here. To send a note upstream,
+  run it with `UM_KB_REPO=rehan-remade/universal-modder`.
 - **`.claude-plugin/marketplace.json`** makes this repo its own Claude Code marketplace, also named
   `universal-modder-hwa`: `claude plugin marketplace add https://github.com/magjangin/universal-modder-hwa`, then
   `claude plugin install universal-modder-hwa@universal-modder-hwa`. Without it `marketplace add` fails

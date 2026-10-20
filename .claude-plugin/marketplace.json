@@ -1,0 +1,19 @@
+{
+  "name": "universal-modder-hwa",
+  "owner": {
+    "name": "magjangin",
+    "url": "https://github.com/magjangin"
+  },
+  "metadata": {
+    "description": "Unofficial fork of rehan-remade/universal-modder without fal, for Antigravity and Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "universal-modder-hwa",
+      "source": "./",
+      "description": "Mod almost any game you own with an AI agent: engine recon, reverse engineering, sprite and 3D-to-sprite pipelines, in-game testing, showcase videos, and a shared knowledge base. Unofficial fork without fal.",
+      "homepage": "https://github.com/magjangin/universal-modder-hwa",
+      "license": "MIT"
+    }
+  ]
+}

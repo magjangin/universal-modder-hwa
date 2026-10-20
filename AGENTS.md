@@ -78,3 +78,7 @@ a game was modded.
   Claude Code) and the PATH hook marker is `universal-modder-hwa-path`, so it can sit next to an installed
   upstream plugin without one silently shadowing the other. The Python package is still `um`, so whichever
   `bin/` comes first on PATH wins.
+- **`.claude-plugin/marketplace.json`** makes this repo its own Claude Code marketplace, also named
+  `universal-modder-hwa`: `claude plugin marketplace add https://github.com/magjangin/universal-modder-hwa`, then
+  `claude plugin install universal-modder-hwa@universal-modder-hwa`. Without it `marketplace add` fails
+  ("Marketplace file not found"). Mashup Prompter (magjangin/mashup-mods-tool) installs it this way.

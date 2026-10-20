@@ -27,6 +27,7 @@
 | `hooks/`, `.claude/settings.json` | 세션 시작 시 `um`을 PATH에 넣는 훅 |
 | `knowledge/` | 원작에서 가져온 게임별 모딩 필드 노트 (`um kb search`) |
 | `plugin.json`, `.claude-plugin/plugin.json` | Antigravity / Claude Code 플러그인 매니페스트 |
+| `.claude-plugin/marketplace.json` | Claude Code 마켓플레이스 (`claude plugin marketplace add https://github.com/magjangin/universal-modder-hwa` → `claude plugin install universal-modder-hwa@universal-modder-hwa`) |
 
 ## 빠른 시작
 ```bash

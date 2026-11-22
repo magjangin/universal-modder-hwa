@@ -69,9 +69,11 @@ a game was modded.
 - **Picked from upstream so far** (checked against upstream `3c4ac6c`, 2026-11-06): backup safety (#472, #483,
   #488: absolute source, reserved manifest, restore checks via `common.inside`/`open_out`), kb sync/check
   (#468, #474, #396; User-Agent kept as `universal-modder-hwa`), gfxcapture escaping (#400), the PE
-  data-directory fix in `scan` (#442), and the Project Paradise 2 note removal (#466). Not picked on purpose:
+  data-directory fix in `scan` (#442), the Project Paradise 2 note removal (#466), `scan` host detection +
+  `game-recon/references/compatibility.md`, `publish check` own-install skipping (`_own_names`, `_loader_folder`), and
+  the console-firmware and bridge-`Origin` lines in `safety.md` (2026-11-16). Not picked on purpose:
   `um sprixen` / `um voidless` (paid asset APIs, like fal). Not picked yet: the CoD tools (`fastfile`, `iwi`,
-  `weapon`), `blitz3d-decomp`, `scan` host line + `compatibility.md`, REA-first and safety doc edits, new kb notes.
+  `weapon`, `iw-engine.md`), `blitz3d-decomp`, REA-first doc edits, new kb notes.
 - **Removed:** `um/fal.py`, `skills/fal-assets`, `.mcp.json` / `mcp.json` (fal MCP only), `tests/test_fal_key.py`,
   the fal tests in `tests/test_um.py`, and the configs for agents not used here (Codex, Cursor, VS Code /
   Copilot, Gemini CLI extension, OpenCode plugin), plus `examples/`, `docs/media`, README/CONTRIBUTING and

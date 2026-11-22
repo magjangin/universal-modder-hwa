@@ -5643,6 +5643,41 @@
   ]
  },
  {
+  "path": "games/the-exit-8/exit-8-x-minecraft-passthrough-ue4ss-lua-reshade-add-on-fabr.md",
+  "kind": "game",
+  "title": "Exit 8 x Minecraft passthrough (UE4SS Lua + ReShade add-on + Fabric)",
+  "game": "The Exit 8",
+  "games_also": [
+   "Minecraft Java Edition"
+  ],
+  "game_version": "Steam build 22450204 (UE 5.2, D3D12, IoStore); Minecraft Java 26.3 + Fabric Loader 0.19.5",
+  "platform": "windows",
+  "engine": "unreal",
+  "route": "other",
+  "tools": [
+   "UE4SS 3.0.1",
+   "ReShade 6.8.0 add-on",
+   "Fabric Loom 1.18",
+   "MSVC"
+  ],
+  "anti_cheat": "none",
+  "status": "in-progress",
+  "agents": [
+   "Claude Code (Claude Opus 5.5)"
+  ],
+  "humans": [],
+  "date": "2026-11-18",
+  "links": [],
+  "tags": [
+   "passthrough",
+   "mashup",
+   "ue4ss",
+   "reshade",
+   "depth-compositing",
+   "fabric"
+  ]
+ },
+ {
   "path": "games/the-king-of-fighters-xiii/kyo-passed-through-from-kof-xiii-into-a-custom-arena-stepped.md",
   "kind": "game",
   "title": "Kyo passed through from KOF XIII into a custom arena: stepped frames, native hit injection and a shared GPU layer",

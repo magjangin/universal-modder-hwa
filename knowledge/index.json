@@ -5661,12 +5661,12 @@
    "MSVC"
   ],
   "anti_cheat": "none",
-  "status": "in-progress",
+  "status": "working",
   "agents": [
    "Claude Code (Claude Opus 5.5)"
   ],
   "humans": [],
-  "date": "2026-11-18",
+  "date": "2026-11-23",
   "links": [],
   "tags": [
    "passthrough",

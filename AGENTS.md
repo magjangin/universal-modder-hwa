@@ -63,6 +63,17 @@ a game was modded.
 - **Wording:** keep skills and docs agent-neutral ("the agent", not a product name) except in sections
   about one specific agent.
 
+## Design notes and dead ends (do not redo these)
+- **`um kb` parse cost:** `kb search`/`kb check` parse every note's YAML on each call (~250 notes). `parse()` uses
+  PyYAML's `CSafeLoader` (libyaml) when present and falls back to `SafeLoader`; this cut parsing from ~0.38 s to
+  ~0.15 s. Per-process caching was not added: each CLI call parses once, so it would not help.
+- **Remaining startup cost** of `bin/um` (~1 s) is `uv` bootstrapping, not Python code; do not "optimise" `um/` for it.
+- **`um scan` file index** (`Index`) is a bounded `os.walk` (`MAX_DEPTH`, `MAX_ENTRIES`) that lower-cases paths once;
+  `find`/`has` are linear scans over that list by design (game folders are capped, so an inverted index is not worth it).
+- **Audit status (2026-11-23):** all `um/` modules reviewed; no refactor was needed (one module per CLI group, shared
+  helpers in `um/common.py`, no broad `except`/`shell=True`). Two `um publish check .` warnings remain on upstream
+  `knowledge/` notes (absolute user paths); they are upstream content, left as is.
+
 ## Fork notes (what changed from upstream, and why)
 - Forked from upstream commit `23902ef` (2026-10). Not tracking upstream automatically; when pulling new
   upstream work, re-apply the removals below.

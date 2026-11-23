@@ -664,7 +664,8 @@ def test_cutout_keeps_interior_white():
 def test_fit_and_hard_alpha():
     f = sprite.fit(sprite.cutout(sprite_on_white()), 10, 10, anchor="bottom")
     assert f.size == (10, 10) and f.getbbox()[3] == 10
-    assert set(sprite.hard_alpha(f).getchannel("A").getdata()) <= {0, 255}
+    hist = sprite.hard_alpha(f).getchannel("A").histogram()
+    assert {v for v, n in enumerate(hist) if n} <= {0, 255}
 
 
 def test_sheet_slice_roundtrip():

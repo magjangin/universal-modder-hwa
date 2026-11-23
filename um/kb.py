@@ -160,7 +160,8 @@ def parse(path: Path) -> tuple[dict, str]:
         return {}, text
     yaml = need("yaml", "pyyaml")
     try:
-        meta = yaml.safe_load(m.group(1)) or {}
+        # libyaml's C loader is ~10x faster than the pure-Python one; `kb search` parses every note on each call
+        meta = yaml.load(m.group(1), Loader=getattr(yaml, "CSafeLoader", yaml.SafeLoader)) or {}
     except (yaml.YAMLError, ValueError) as e:  # ValueError: a date YAML can't build, e.g. 2026-09-31
         return {"_yaml_error": str(e)}, m.group(2)
     return (meta if isinstance(meta, dict) else {}), m.group(2)
